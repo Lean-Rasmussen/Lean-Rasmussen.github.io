@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  position: relative;
+}
+.frontpage {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(225, 255, 255, 0.2)), url(../../css/img/forest1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+.frontpage__container {
+  padding-top: 10vh;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.frontpage__container > h2 {
+  padding-bottom: 2.5rem;
+}
+.frontpage__wave {
+  position: relative;
+  width: 110vh;
+  height: 150%;
+  border-radius: 25%;
+}
+.frontpage__wave:before,
+.frontpage__wave:after {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 200%;
+  bottom: -275%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -75%);
+  background-color: #000;
+}
+.frontpage__wave:before {
+  border-radius: 50%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: waveAnimation 15s linear infinite;
+}
+.frontpage__wave:after {
+  border-radius: 50%;
+  background: rgba(150, 150, 150, 0.25);
+  animation: waveAnimation 10s linear infinite;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  1000% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+.parallax__basic__picture {
+  top: 0;
+  height: 80vh;
+  width: 100vw;
+  background-image: url("../../css/img/sunset.jpeg");
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.parallax__basic__description {
+  width: 60%;
+  margin: auto;
+  padding: 2vh;
+  text-align: center;
+  background: transparent;
+}
+.parallax__periscope {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.parallax__periscope__image {
+  min-height: 50vh;
+  max-width: 80%;
+  margin: auto;
+  background-image: url("../../css/img/periscope.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 50%;
+  background-size: 50% 100%;
+  margin-top: 10%;
+  border: 2px solid black;
+}
+.bottom {
+  height: 12.5vw;
+}
+.parallax-advanced {
+  overflow: hidden;
+}
+.parallax-advanced__background {
+  top: 0;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("../../css/img/ocean.png");
+  background-size: 100% 110%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.parallax-advanced__background--front {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("../../css/img/stones.png");
+  z-index: 2;
+  margin-bottom: -72px;
+}
+.parallax-advanced__background--text {
+  position: absolute;
+  text-align: center;
+  top: 75px;
+  width: 100%;
+  z-index: 1;
+  color: white;
+}
+.parallax-advanced__textbox {
+  text-align: center;
+  height: 800px;
+  z-index: 3;
+  width: 60%;
+  margin: 75px auto;
+}
+body {
+  display: flex;
+  flex-flow: row wrap;
+}
+header {
+  width: 100%;
+}
+.navigation {
+  /* Btn and Checkbox checked with btn*/
+  /* Background and checked Nav + background */
+  /* Items and nav checked with items*/
+}
+.navigation__checkbox {
+  opacity: 0;
+}
+.navigation__checkbox,
+.navigation__btn {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin-right: 5px;
+  margin-top: 5px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.5s;
+  z-index: 150;
+}
+.navigation__btn {
+  z-index: 125;
+}
+.navigation__checkbox:checked ~ .navigation__btn {
+  border-color: white;
+}
+.navigation__checkbox:checked ~ .navigation__btn span {
+  transform: rotate(-45deg);
+  top: 49%;
+  background-color: white;
+}
+.navigation__checkbox:checked ~ .navigation__btn :last-child {
+  transform: rotate(45deg);
+}
+.navigation__checkbox:hover ~ .navigation__btn {
+  border-color: white;
+}
+.navigation__checkbox:hover ~ .navigation__btn span {
+  background-color: white;
+}
+.navigation__btn__span {
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.4s;
+  position: absolute;
+  width: 80%;
+  height: 0.3rem;
+  background-color: black;
+  display: block;
+  border-radius: 10px;
+  left: 10%;
+}
+.navigation__btn__span--1 {
+  top: 20%;
+}
+.navigation__btn__span--2 {
+  top: 45%;
+}
+.navigation__btn__span--3 {
+  bottom: 20%;
+}
+.navigation__background {
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.5s;
+  background-image: linear-gradient(210deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  clip-path: circle(115% at 100% 0%);
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  background-image: linear-gradient(210deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  width: 100vW;
+  height: 100vh;
+}
+.navigation__items {
+  overflow: hidden;
+  position: fixed;
+  width: 75%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.5s;
+  opacity: 0;
+  z-index: -200;
+}
+.navigation__items__item {
+  list-style: none;
+  color: #ffffff;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 1000;
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in;
+  padding: 1rem 1.5rem;
+}
+.navigation__items__item:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.navigation__items__item > a {
+  color: inherit;
+  text-decoration: none;
+}
+.navigation__checkbox:checked ~ .navigation__items {
+  opacity: 1;
+  z-index: 125;
+}
+hr {
+  width: 60%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+/*
+
+This file contains the constants for this
+projects.
+This will be colors and standard sices.
+
+Changing these variables changes larger parts
+of the website.
+*/
+/*
+colours 
+*/
+/*
+sices
+*/

@@ -1,0 +1,131 @@
+
+.navigation{
+    &__checkbox{
+        opacity: 0;
+    }
+
+    &__checkbox, &__btn{
+        position: fixed;
+        top: 0.5rem;
+        right: 0.5rem;
+        margin-right: 5px;
+        margin-top: 5px;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        cursor: pointer;
+        transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.5s;
+        z-index: 150;
+
+    }
+
+    /* Btn and Checkbox checked with btn*/
+    &__btn{
+        z-index: 125;   
+    }
+    &__checkbox:checked ~ &__btn{
+        border-color: white;
+        span{
+            transform: rotate(-45deg);
+            top:49%;
+            background-color: white;
+        }
+        :last-child{
+            transform: rotate(45deg);
+        }    
+    }
+
+    &__checkbox:hover ~ &__btn{
+        border-color: white;
+        span{
+            background-color: white;
+        }
+    }
+
+    &__btn{
+        &__span{
+            transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.4s;
+            position: absolute;
+            width: 80%;
+            height: 0.3rem;
+            background-color:black;
+            display: block;
+            border-radius: 10px;
+            left: 10%;
+
+              &--1{
+                top:20%;
+              }
+
+              &--2{
+                top: 45%;
+              }
+
+              &--3{
+                bottom:20%;
+            }
+        }
+    }   
+
+    /* Background and checked Nav + background */
+    &__background{
+        transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.5s;
+        background-image: linear-gradient(210deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
+        clip-path: circle(115% at 100% 0%);
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        right:0px;
+        top: 0px;
+        z-index: 100;
+
+    }
+
+    &__checkbox:checked ~ &__background{
+        background-image: linear-gradient(210deg, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.7));
+        width: 100vW;
+        height: 100vh;
+    }
+    /* Items and nav checked with items*/
+    &__items{
+        overflow: hidden;
+        position: fixed;
+        width: 75%;
+        text-align: center;
+        .mixinPageCenter();
+        transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.5s;
+        opacity: 0;
+        z-index: -200;
+   
+        &__item{
+            list-style: none;
+            color: rgba(255,255, 255, 1);
+            border-radius: 1rem;
+            font-size: 1.6rem;
+            font-weight: 1000;
+            text-transform: capitalize;
+            background-color: rgba(0, 0, 0, 0);
+            transition: all .5s ease-in;
+            padding: 1rem 1.5rem;
+            &:hover{
+                background-color: rgba(255,255, 255, 1);
+                color: rgba(0, 0, 0, 1);
+            }
+            & > a{
+                color :inherit;
+                text-decoration: none;
+            }
+        }
+    }
+    &__checkbox:checked ~ &__items{
+        opacity: 1;
+        z-index: 125;
+    }   
+ 
+}
+
+hr{
+    width: @width;
+}
+

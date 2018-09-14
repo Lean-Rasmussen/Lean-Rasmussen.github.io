@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="TMbling">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TM bling
+    </title>
+
+<!-- setting up Less and CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    
+
+
+</head>
+<body>
+    <input type="checkbox" class=" navigation__checkbox">
+    <div class="navigation__btn">
+            <span class="navigation__btn__span navigation__btn__span--1"></span>
+            <span class="navigation__btn__span navigation__btn__span--2"></span>
+            <span class="navigation__btn__span navigation__btn__span--3"></span>
+    </div>
+
+
+    <div class="navigation__items" ng-controller='navController'>
+        <ul>
+            <li class="navigation__items__item"><a href="#/">home</a></li>
+            <li class="navigation__items__item"><a href="/#!/parallax">Basis parallax scroll</a></li>
+            <li class="navigation__items__item"><a href="/#!/advancedParallax">Advanced parallax scroll</a></li>
+            <li class="navigation__items__item"><a href="/#!/SVG">SVG</a></li>
+        </ul>
+    </div>
+
+    <div class="navigation__background"> </div>
+    <div class="container">
+            <div ng-view>
+
+            </div>
+    </div>
+</body>
+
+
+ <!--Setting up js anngular and Jquuery-->
+
+
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <!-- angular route-->
+    <script src="https://code.angularjs.org/1.7.2/angular-route.min.js"></script>
+    
+    <script src="app.js"></script>
+</html>

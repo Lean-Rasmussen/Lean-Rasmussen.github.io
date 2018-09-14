@@ -1,0 +1,37 @@
+<div class="parallax-advanced">
+    <div class="parallax-advanced__background">
+        <div class="parallax-advanced__background--text">
+                <h2> Advanced Parallax Effect</h2>
+        </div>
+        <div class="parallax-advanced__background--front"></div>
+        
+        </div>
+    </div>
+    <div class="parallax-advanced__textbox">
+        <h3>Adjusted Scroll parallax</h3>
+        <p>In this effect we adjust the speed of different objects
+            The scroll on the headline is going doing and the stones
+            in the bottom of the screen are scrolling up showing more
+            the further the scroll.
+        </p>
+        <p>
+            The scroll amount that is scrolled from the top of 
+            the wondow is pulled via Jquery using: 
+        </p>
+        <p>
+            $(window).scroll(function(){
+        <br>
+            let Scroll = $(this).scrollTop()
+            <br>
+            };             
+        </p>
+        <p>
+            This produces a value which we can transform the
+            position of selected elements.
+            the transform: translateX() here is an obvious candidate;
+            but other effects such as opacity can be used. like on the title of this page.
+        </p>
+        <hr>
+    </div>
+   
+</div>

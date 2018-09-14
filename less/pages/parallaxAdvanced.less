@@ -1,0 +1,45 @@
+.parallax-advanced{
+    overflow: hidden;
+    &__background{
+
+        top:0;
+        height:80vh;
+        width: 100vw;
+        position: relative;
+        background-image: url("../../css/img/ocean.png");
+        background-size: 100% 110%;
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        &--front{
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40vh; 
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url("../../css/img/stones.png");
+            z-index: 2;
+            margin-bottom: -72px;
+            
+        }
+        &--text{
+            position: absolute;
+            text-align: center;
+            top: 75px;
+            width: 100%;
+            z-index: 1;
+            color: white;
+        }
+    }
+    &__textbox{
+        text-align: center;
+        height: 800px;
+        z-index: 3;
+        width: @width;
+        margin: 75px auto;
+    }
+
+}

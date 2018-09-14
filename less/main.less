@@ -1,0 +1,20 @@
+//7-1 Layout
+//BASE: rule that are set to make a base of fundamental rule for all pages 
+@import "base/base";
+
+// Pages rules that are set only to specific pages
+@import "pages/frontpage";
+@import "pages/parallaxBasic";
+@import "pages/parallaxAdvanced";
+//Layout: general Layout rules 
+@import "layout/base";
+
+//Components that are use over and over again on different pages
+@import "components/navigation";
+
+//abstracts- items that can be used and reused for different compoenets
+//these have to be last otherwise the animations does not work!
+
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";

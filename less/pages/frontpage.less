@@ -1,0 +1,65 @@
+.frontpage{
+    background-image: linear-gradient(180deg,rgba(255,255,255, 0.0),rgba(225,255,255,0.2)),
+                    url(../../css/img/forest1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+    &__container{
+        padding-top: 10vh;
+        width: @width;
+        text-align: center;
+        margin: auto;
+
+        & > h2{
+            padding-bottom: 2.5rem;
+        }
+    }
+
+    &__wave{
+        position: relative;
+        width: 110vh;
+
+        //this varriable should get larger when screen size increases 
+        //to keep the waves at the bottom of the screen it should be
+        //relative to height and width poportion
+        height: 150%;
+        
+        border-radius: 25%;
+        &:before,
+        &:after{
+            content:"";
+            position:absolute;
+            width: 300%;
+            height: 200%;
+            bottom: -275%;
+            left:50%;
+            border-radius: 50%;
+            transform: translate(-50%,-75%);            
+            background-color: #000;
+        }
+        &:before{
+            border-radius: 50%;
+            left: 10%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: waveAnimation 15s linear infinite;
+        }
+        &:after{
+            border-radius: 50%;
+            background: rgba(150, 150, 150, 0.25);
+            animation: waveAnimation 10s linear infinite;
+        }
+    }
+}
+@keyframes waveAnimation{
+    0%{
+        transform: translate(-50%, -75%) rotate(0deg)
+    }
+    1000%{
+        transform: translate(-50%, -75%) rotate(360deg)
+    }
+}

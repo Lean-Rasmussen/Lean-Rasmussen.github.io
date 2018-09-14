@@ -1,0 +1,23 @@
+{
+  "name": "TMbling",
+  "version": "1.0.0",
+  "description": "Animations for Telmore",
+  "main": "index.js",
+  "scripts": {
+    "watchLess": "less-watch-compiler less css main.less"
+  },
+  "author": "Lean Rasmussen",
+  "lisence": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "concat": "^1.0.3",
+    "node-sass": "4.5.3",
+    "postcss-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "less": "^3.7.0",
+    "less-watch-compiler": "^1.11.3",
+    "live-server": "^1.2.0"
+  }
+}

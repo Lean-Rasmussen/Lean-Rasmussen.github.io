@@ -1,0 +1,47 @@
+.parallax{
+    &__basic{
+        &__picture{
+            top: 0;
+            height: 80vh;
+            width: 100vw;
+            background-image: url("../../css/img/sunset.jpeg");
+            background-position: top center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
+
+        }
+        &__description{
+            width: @width;
+            margin: auto;
+            padding: 2vh;
+            text-align: center;
+            background: transparent;
+        }
+    }
+    &__periscope{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        &__image{
+            min-height: 50vh;
+            max-width: 80%;
+            margin: auto;
+            background-image: url("../../css/img/periscope.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border-radius: 50%;
+            background-size: 50% 100%;
+            margin-top: 10%;
+            border: 2px solid black;
+        }
+    }
+}
+.bottom{
+    //this is set to width since the height gives bad effects on narrow
+    //scrrens but on landscape the extraspace does not hurt
+    height: 12.5vw;
+
+}
