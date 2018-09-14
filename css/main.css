@@ -137,11 +137,25 @@ body {
   color: white;
 }
 .parallax-advanced__textbox {
+  background-color: #0628b9;
+  color: white;
   text-align: center;
-  height: 800px;
+  width: 100%;
   z-index: 3;
+  padding: 50px 0;
+}
+.parallax-advanced__textbox__text {
   width: 60%;
-  margin: 75px auto;
+  margin: 0 auto;
+}
+.svg {
+  background-color: #f7a6d9;
+  width: 100vw;
+  height: 110vh;
+}
+.svg_headling {
+  text-align: center;
+  margin: auto;
 }
 body {
   display: flex;

@@ -15,7 +15,6 @@
     "postcss-cli": "^5.0.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
     "less": "^3.7.0",
     "less-watch-compiler": "^1.11.3",
     "live-server": "^1.2.0"
