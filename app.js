@@ -2,7 +2,6 @@ $(window).scroll(function(){
     let wScroll = $(this).scrollTop();
     let scropp = wScroll*-0.15;
     let textscroll =  wScroll*1.5;
-    console.log(scropp +" scroop " + wScroll +" window scroll ")
     $('.parallax-advanced__background--front').css({
         "transform":"translate(0px," + scropp +"px)"
     })
@@ -18,7 +17,6 @@ var TMbling= angular.module('TMbling',['ngRoute']);
 //controller
 
 TMbling.controller('navController',['$scope',function($scope){
-    console.log($scope)
 }])
 
 //routes

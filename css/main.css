@@ -177,6 +177,29 @@ body {
   text-align: center;
   margin: auto;
 }
+.text-container {
+  margin: 10px;
+  color: white;
+  background-color: #0628b9;
+  width: 300px;
+}
+.text {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.hiddenText {
+  max-height: 200px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(white, #0628b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button {
+  cursor: pointer;
+}
+.centerBtn {
+  text-align: center;
+}
 body {
   display: flex;
   flex-flow: row wrap;

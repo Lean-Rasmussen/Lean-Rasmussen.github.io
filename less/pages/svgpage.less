@@ -8,3 +8,31 @@
     margin: auto;
   }
 }
+
+.text-container{
+  margin: 10px;
+  //text color and background linear-gradient should both be determined by text color in CMS
+  color: white;
+  //background color has to be defined and will also work as
+  background-color: @Tprime-bla;
+  width: 300px;
+}
+.text{
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.hiddenText{
+  max-height:200px;
+  overflow:hidden;
+  //first determines the text color and should be liftet from container text color
+  // Second variable has to be the same as background color from container.
+  background: -webkit-linear-gradient(white, @Tprime-bla);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button{
+  cursor:pointer;
+}
+.centerBtn{
+  text-align: center;
+}
