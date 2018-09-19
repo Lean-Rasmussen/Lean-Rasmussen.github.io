@@ -1,34 +1,42 @@
 .svg{
-  background-color: @Tprime-pink;
+  //background-color: @Tprime-pink;
+  background-image: url(../../css/img/sunset.jpeg);
   width:100vw;
-  height: 110vh;
 
   &_headling{
     text-align: center;
     margin: auto;
   }
 }
+//Hide show options in all different browsers setttings.
 
 .text-container{
   margin: 10px;
   //text color and background linear-gradient should both be determined by text color in CMS
   color: white;
-  //background color has to be defined and will also work as
-  background-color: @Tprime-bla;
-  width: 300px;
+  width: 50%;
+  max-height: 110vh;
+
 }
 .text{
   margin-bottom: 5px;
   padding-bottom: 5px;
+  max-height: 400px;
+  transition: max-height 1s @disney;
+  //Background has to be filled with color, because otherwise the transparency transition will
+  //be instant which means makes it look terrible.
+  background: -webkit-linear-gradient(white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hiddenText{
   max-height:200px;
   overflow:hidden;
   //first determines the text color and should be liftet from container text color
-  // Second variable has to be the same as background color from container.
-  background: -webkit-linear-gradient(white, @Tprime-bla);
+  background: -webkit-linear-gradient(white 75%, transparent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: max-height 1s @disney;
 }
 .button{
   cursor:pointer;
