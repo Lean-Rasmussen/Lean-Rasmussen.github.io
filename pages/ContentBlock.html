@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Block</title>
+</head>
+<body>
+<div id="content">
+    <!-- Create the content block panel-->
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#panelbody-collapse">
+            <h2 class="panel-title"></h2>
+        </div>
+        <div id="panelbody-collapse" class="panel-collapse collapse in">
+            <div  class="panel-body" {{showHidetext}}></div>
+            <!--button goes here!!-->
+            <a class="button centerBtn {{showHideBtn}}"> Vis Mindre</a>
+        </div>
+    </div>
+</div><!--End content div-->
+</body>
