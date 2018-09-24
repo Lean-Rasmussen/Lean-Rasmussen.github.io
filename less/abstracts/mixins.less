@@ -4,34 +4,5 @@
     transform: translate(-50%, -50%);
 };
 
-@mixin respond($breakpoint){
-@if $breakpoint == phone{
-  @media (max-width: 780px){
-  @content
-  }
-};
-  //mixing for phone in landscape mode
-@if $breakpoint == phone-ls{
-  @media only screen
-  and (max-device-width: 780px)
-  and (orientation: landscape){
-  @content
-  }
-};
-@if $breakpoint == tab-horizontal{
-  @media (max-width: 900px){
-  @content
-  }
-};
-@if $breakpoint == tab-vertical{
-  @media (max-width: 1200px){
-  @content
-  }
-};
-@if $breakpoint == xl-screen{
-  @media (min-width: 1800px){
-  @content
-  }
-};
 
-}
+  //mixing for phone in landscape mode
