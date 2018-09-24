@@ -25,8 +25,8 @@ TMbling.config(function($routeProvider){
     .when('/advancedParallax', {
         templateUrl: 'pages/advancedParallax.html',
     })
-    .when('/SVG', {
-        templateUrl: 'pages/svg.html',
+    .when('/fadeText', {
+        templateUrl: 'pages/fadeText.html',
     })
         .when('/input', {
             templateUrl: 'pages/input.html',
