@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   position: relative;
@@ -201,7 +200,7 @@ body {
     background: -webkit-linear-gradient(white 75%, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: max-height 1s cubic-bezier(0.86, -0.27, 0.55, 1.34);
+    transition: max-height 1s ease-in;
   }
 }
 .button {
@@ -340,30 +339,48 @@ hr {
   width: 60%;
 }
 .input-container {
-  padding: 5rem;
   color: white;
   background-color: #0628b9;
+  width: 100%;
+  height: 100%;
+}
+button {
+  background-color: #f7a6d9;
+  color: white;
+  width: 300px;
+  height: 52px;
 }
 h2 {
   color: white;
 }
 .input-box {
   padding: 1.5rem 0;
+  line-height: 1.8rem;
+  width: 100%;
+}
+.input {
+  line-height: 52px;
+  width: 300px;
+  margin: 10px;
+}
+.war {
+  font-size: 1.2rem;
+  color: #e12a3a;
+  margin-left: 10px;
 }
 .war1 {
   height: 1rem;
   display: block;
   padding-bottom: 5px;
-  font-size: 0.8rem;
-  color: #e12a3a;
 }
 .war2 {
-  width: 8rem;
-  display: block;
-  font-size: 0.8rem;
-  color: #e12a3a;
+  display: none;
+  width: 300px;
   background: white;
   text-align: center;
+}
+button {
+  margin-left: 10px;
 }
 @keyframes waveAnimation {
   0% {
